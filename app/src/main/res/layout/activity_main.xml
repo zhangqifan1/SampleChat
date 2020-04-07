@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/defaul"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="开始就显示的"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/change"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:text="可以是布局"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </FrameLayout>
+    <Button
+        android:layout_centerInParent="true"
+        android:id="@+id/butStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始" />
+
+</RelativeLayout>
